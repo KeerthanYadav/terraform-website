@@ -114,7 +114,7 @@ TFE runs terraform plan and apply operations in a disposable docker container. T
 ![ptfe-docker-image](./assets/ptfe-docker-image.png)
 
 ### Requirements
- - The base image must be ubuntu:xenial
+ - The base image must be `ubuntu:xenial`.
  - The image must exist on the PTFE host. It can be added by running `docker pull` from a local registry or any other similar method.
  - The user is responsible for making sure CA certificates are available when terraform runs.
  - Terraform must not be installed in the image. TFE will take care of that on runtime.
